@@ -1,9 +1,9 @@
 # Visual Studio Project Generated Files
-.vs/*
-Binaries/*
-Intermediate/*
-Saved/*
-*.sln
+ProjectAlpha/.vs/*
+ProjectAlpha/Binaries/*
+ProjectAlpha/Intermediate/*
+ProjectAlpha/Saved/*
+ProjectAlpha/*.sln
 
 # compiled Object Fiels
 *.slo
