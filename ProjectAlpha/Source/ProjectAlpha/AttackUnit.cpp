@@ -2,10 +2,15 @@
 
 
 #include "AttackUnit.h"
+#include "Kismet/GameplayStatics.h"
+#include "AttackUnitController.h"
+#include "GameFramework/DamageType.h"
 
 // Sets default values
 AAttackUnit::AAttackUnit() :
-	HealthPoint(100)
+	HealthPoint(100),
+	MaxHealthPoint(100),
+	BaseMeleeDamage(25)
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -17,6 +22,38 @@ void AAttackUnit::BeginPlay()
 {
 	Super::BeginPlay();
 	
+}
+
+float AAttackUnit::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	/** Damage affections here: */
+	HealthPoint -= DamageAmount;
+	if (HealthPoint < 0)
+	{
+		// Unit Dies
+		HealthPoint = 0;
+		OnUnitDieDelegate.Broadcast(DamageCauser, this);
+	}
+	/** ==========VISUAL AUDIO CODES HERE========== */
+
+	// return DamageAmount
+	return DamageAmount;
+}
+
+void AAttackUnit::DealDamage(AActor* TargetActor)
+{
+	// return if actor try to deal damage to itself
+	if (TargetActor == this) return;
+	// return if no AIController detected
+	if (AttackController == nullptr) return;
+
+	UGameplayStatics::ApplyDamage(
+		TargetActor,
+		BaseMeleeDamage,
+		AttackController,
+		this,
+		UDamageType::StaticClass()
+	);
 }
 
 // Called every frame
