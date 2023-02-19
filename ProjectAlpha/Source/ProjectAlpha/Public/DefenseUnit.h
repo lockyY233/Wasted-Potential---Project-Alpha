@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Team.h"
 #include "DefenseUnit.generated.h"
 
 UCLASS()
@@ -13,11 +14,54 @@ class PROJECTALPHA_API ADefenseUnit : public APawn
 
 public:
 	// Sets default values for this pawn's properties
-	ADefenseUnit();
+	ADefenseUnit();	
+	
+	// call overlaps event in BP
+	// function triggered when AttackSphere detect an overlap
+	UFUNCTION(BlueprintCallable)
+		void OnAttackSphereBeginOverlap(
+			UPrimitiveComponent* OverlapComponent,
+			AActor* OtherActor,
+			UPrimitiveComponent*
+			OtherComp,
+			int32 OtherBodyIndex,
+			bool bFromSweep,
+			const FHitResult& SweepResult
+		);
+
+	// function triggered when target leave AttackSphere detection
+	UFUNCTION(BlueprintCallable)
+		void OnAttackSphereEndOverlap(
+			UPrimitiveComponent* OverlapComponent,
+			AActor* OtherActor,
+			UPrimitiveComponent*
+			OtherComp,
+			int32 OtherBodyIndex
+		);
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+private:
+
+	/** Unit Team enum so they dont fight each other */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
+		ETeam EUnitTeam;
+
+	UPROPERTY(EditAnywhere, BLueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
+		float BaseDamage;
+
+	UPROPERTY(VisibleAnywhere, BLueprintReadOnly, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
+		class ADefenseUnitController* DU_Controller;
+
+	UPROPERTY(EditAnywhere, BLueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
+		class UBehaviorTree* DU_BehaviorTree;
+
+	/** ============== AI KEYS ==============*/
+	UPROPERTY(EditAnywhere, BLueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
+		bool bIsTargetInRange;
+	/** ===================================== */
 
 public:	
 	// Called every frame

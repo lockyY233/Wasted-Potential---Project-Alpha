@@ -12,6 +12,7 @@
 
 // Sets default values
 AAttackUnit::AAttackUnit() :
+	EUnitTeam(ETeam::ET_Player),
 	bIsTargetInRange(false),
 	bIsAttacking(false),
 	// combat properties
@@ -21,13 +22,15 @@ AAttackUnit::AAttackUnit() :
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	AttackSphere = CreateDefaultSubobject<USphereComponent>(TEXT("AttackSphere"));
+	AttackSphere->SetupAttachment(GetRootComponent());
 
 }
 
-void AAttackUnit::UnitDamaged_Implementation(AActor* VictimTarget, float DamageAmount)
+void AAttackUnit::UnitDamaged_Implementation(ETeam UnitTeam, AActor* VictimTarget, float DamageAmount)
 {
 	if (VictimTarget)
 	{
+		if (UnitTeam == EUnitTeam) return;
 		UGameplayStatics::ApplyDamage(
 			VictimTarget,
 			DamageAmount,
@@ -36,6 +39,10 @@ void AAttackUnit::UnitDamaged_Implementation(AActor* VictimTarget, float DamageA
 			UDamageType::StaticClass()
 		);
 		GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Current Health: %d"), HealthPoint));
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("OtherActor Invalid")));
 	}
 }
 
@@ -61,7 +68,7 @@ float AAttackUnit::TakeDamage(float DamageAmount, FDamageEvent const& DamageEven
 {
 	/** Damage affections here: */
 	HealthPoint -= DamageAmount;
-	if (HealthPoint < 0)
+	if (HealthPoint <= 0)
 	{
 		// Unit Dies
 		HealthPoint = 0;
@@ -73,23 +80,15 @@ float AAttackUnit::TakeDamage(float DamageAmount, FDamageEvent const& DamageEven
 	return DamageAmount;
 }
 
-void AAttackUnit::DealDamage(AActor* TargetActor, float DamageAmount)
-{
-	// return if actor try to deal damage to itself
-	if (TargetActor == this) return;
-	// return if no AIController detected
-	if (AU_Controller == nullptr) return;
-
-	UnitDamaged_Implementation(TargetActor, DamageAmount);
-}
 
 void AAttackUnit::OnAttackSphereBeginOverlap(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+
 	// When Target is in Range
 	if (OtherActor)
 	{
 		// check if target has interface inherited
-		IUnitDamagedInterface* TargetInteractable = Cast<IUnitDamagedInterface>(OtherActor);
+		auto TargetInteractable = Cast<IUnitDamagedInterface>(OtherActor);
 		if (TargetInteractable)
 		{
 			// Reminder: bIsTargetInRange is used by Behavior Tree

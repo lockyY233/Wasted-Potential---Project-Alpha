@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "UnitDamagedInterface.h"
+#include "PaperZDCharacter.h"
+#include "Team.h"
 #include "AttackUnit.generated.h"
 
 
@@ -14,7 +16,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnUnitDieDelegate, AActor*, Instig
 
 /** ============================= */
 UCLASS()
-class PROJECTALPHA_API AAttackUnit : public APawn, public IUnitDamagedInterface
+class PROJECTALPHA_API AAttackUnit : public APaperZDCharacter, public IUnitDamagedInterface
 {
 	GENERATED_BODY()
 
@@ -23,7 +25,7 @@ public:
 	AAttackUnit();
 
 	// Interface for taking damage
-	virtual void UnitDamaged_Implementation(AActor* VictimTarget, float DamageAmount) override;
+	virtual void UnitDamaged_Implementation(ETeam UnitTeam, AActor* VictimTarget, float DamageAmount) override;
 
 protected:
 	// Called when the game starts or when spawned
@@ -72,6 +74,10 @@ private:
 
 	UPROPERTY(EditAnywhere, BLueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
 		class UBehaviorTree* AU_BehaviorTree;
+
+	/** Unit Team enum so they dont fight each other */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
+		ETeam EUnitTeam;
 	/** =================================== */
 
 
@@ -97,7 +103,7 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
 		int32 HealthPoint;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
 		int32 MaxHealthPoint;
 
 
@@ -114,10 +120,6 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	// Deal Damage
-	UFUNCTION(BlueprintCallable)
-		void DealDamage(AActor* TargetActor, float DamageAmount);
 
 	// Health Point getter
 	FORCEINLINE int32 GetHealthPoint() const { return HealthPoint; }

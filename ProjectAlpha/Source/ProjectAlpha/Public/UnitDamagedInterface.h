@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
+#include "Team.h"
 #include "UnitDamagedInterface.generated.h"
 
 // This class does not need to be modified.
@@ -22,7 +23,6 @@ class PROJECTALPHA_API IUnitDamagedInterface
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-		void UnitDamaged(AActor* VictimTarget, float DamageAmount);
+		void UnitDamaged(ETeam UnitTeam, AActor* VictimTarget, float DamageAmount);
 };
