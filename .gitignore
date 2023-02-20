@@ -4,6 +4,7 @@ ProjectAlpha/Binaries/*
 ProjectAlpha/Intermediate/*
 ProjectAlpha/Saved/*
 ProjectAlpha/*.sln
+/.vs/*
 
 # compiled Object Fiels
 *.slo

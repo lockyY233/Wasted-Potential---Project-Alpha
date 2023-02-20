@@ -1,0 +1,36 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal engine\\_project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\development\\flatnodes\\module.flatnodes.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal engine\\_project\\wasted-potential---project-alpha\\projectalpha\\intermediate\\build\\win64\\projectalphaeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\unreal engine\\_project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\development\\flatnodes\\definitions.flatnodes.h",
+            "d:\\unreal engine\\_project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\flatnodes\\uht\\flatnodes.init.gen.cpp",
+            "d:\\unreal engine\\_project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\flatnodes\\uht\\flatnodessettings.gen.cpp",
+            "d:\\unreal engine\\_project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\source\\flatnodes\\public\\flatnodessettings.h",
+            "d:\\unreal engine\\_project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\flatnodes\\uht\\flatnodessettings.generated.h",
+            "d:\\unreal engine\\_project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\source\\flatnodes\\private\\flatnodes.cpp",
+            "d:\\unreal engine\\_project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\source\\flatnodes\\public\\flatnodes.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\projects\\public\\versescope.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\engine\\public\\slate\\slategameresources.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\styling\\slatestyle.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateborderbrush.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateboxbrush.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\brushes\\slatecolorbrush.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateroundedboxbrush.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateimagebrush.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\styling\\slatestylemacros.h",
+            "d:\\unreal engine\\ue_5.1\\engine\\source\\editor\\editorstyle\\public\\editorstyleset.h",
+            "d:\\unreal engine\\_project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\source\\flatnodes\\private\\flatnodessettings.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-FlatNodes.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\FlatNodes\Intermediate\Build\Win64\UnrealEditor\Development\FlatNodes\Module.FlatNodes.cpp.obj"
+"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\FlatNodes\Intermediate\Build\Win64\UnrealEditor\Development\FlatNodes\Default.rc2.res"
+/OUT:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\FlatNodes\Intermediate\Build\Win64\UnrealEditor\Development\FlatNodes\UnrealEditor-FlatNodes.lib"

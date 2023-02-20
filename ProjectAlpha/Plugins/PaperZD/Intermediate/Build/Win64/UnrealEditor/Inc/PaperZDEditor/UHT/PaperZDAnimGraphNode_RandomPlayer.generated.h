@@ -1,0 +1,96 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "Graphs/Nodes/PaperZDAnimGraphNode_RandomPlayer.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+#ifdef PAPERZDEDITOR_PaperZDAnimGraphNode_RandomPlayer_generated_h
+#error "PaperZDAnimGraphNode_RandomPlayer.generated.h already included, missing '#pragma once' in PaperZDAnimGraphNode_RandomPlayer.h"
+#endif
+#define PAPERZDEDITOR_PaperZDAnimGraphNode_RandomPlayer_generated_h
+
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_SPARSE_DATA
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_RPC_WRAPPERS
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_ACCESSORS
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUPaperZDAnimGraphNode_RandomPlayer(); \
+	friend struct Z_Construct_UClass_UPaperZDAnimGraphNode_RandomPlayer_Statics; \
+public: \
+	DECLARE_CLASS(UPaperZDAnimGraphNode_RandomPlayer, UPaperZDAnimGraphNode_Base, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/PaperZDEditor"), NO_API) \
+	DECLARE_SERIALIZER(UPaperZDAnimGraphNode_RandomPlayer)
+
+
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_INCLASS \
+private: \
+	static void StaticRegisterNativesUPaperZDAnimGraphNode_RandomPlayer(); \
+	friend struct Z_Construct_UClass_UPaperZDAnimGraphNode_RandomPlayer_Statics; \
+public: \
+	DECLARE_CLASS(UPaperZDAnimGraphNode_RandomPlayer, UPaperZDAnimGraphNode_Base, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/PaperZDEditor"), NO_API) \
+	DECLARE_SERIALIZER(UPaperZDAnimGraphNode_RandomPlayer)
+
+
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UPaperZDAnimGraphNode_RandomPlayer(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPaperZDAnimGraphNode_RandomPlayer) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UPaperZDAnimGraphNode_RandomPlayer); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPaperZDAnimGraphNode_RandomPlayer); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UPaperZDAnimGraphNode_RandomPlayer(UPaperZDAnimGraphNode_RandomPlayer&&); \
+	NO_API UPaperZDAnimGraphNode_RandomPlayer(const UPaperZDAnimGraphNode_RandomPlayer&); \
+public: \
+	NO_API virtual ~UPaperZDAnimGraphNode_RandomPlayer();
+
+
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UPaperZDAnimGraphNode_RandomPlayer(UPaperZDAnimGraphNode_RandomPlayer&&); \
+	NO_API UPaperZDAnimGraphNode_RandomPlayer(const UPaperZDAnimGraphNode_RandomPlayer&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UPaperZDAnimGraphNode_RandomPlayer); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPaperZDAnimGraphNode_RandomPlayer); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UPaperZDAnimGraphNode_RandomPlayer) \
+	NO_API virtual ~UPaperZDAnimGraphNode_RandomPlayer();
+
+
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_14_PROLOG
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_SPARSE_DATA \
+	FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_RPC_WRAPPERS \
+	FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_ACCESSORS \
+	FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_INCLASS \
+	FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_SPARSE_DATA \
+	FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_ACCESSORS \
+	FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_INCLASS_NO_PURE_DECLS \
+	FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h_17_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> PAPERZDEDITOR_API UClass* StaticClass<class UPaperZDAnimGraphNode_RandomPlayer>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZDEditor_Private_Graphs_Nodes_PaperZDAnimGraphNode_RandomPlayer_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

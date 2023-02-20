@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-LiveBlueprintDebugger.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Module.LiveBlueprintDebugger.cpp.obj"
+"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Default.rc2.res"
+/OUT:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\UnrealEditor-LiveBlueprintDebugger.lib"

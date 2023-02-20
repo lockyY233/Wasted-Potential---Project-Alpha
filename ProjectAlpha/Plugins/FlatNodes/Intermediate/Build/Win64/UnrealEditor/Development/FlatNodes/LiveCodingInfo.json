@@ -1,0 +1,11 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.FlatNodes.cpp.obj": [
+			"FlatNodes.init.gen.cpp.obj",
+			"FlatNodesSettings.gen.cpp.obj",
+			"FlatNodes.cpp.obj",
+			"FlatNodesSettings.cpp.obj"
+		]
+	}
+}
