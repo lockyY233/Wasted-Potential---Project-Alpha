@@ -25,7 +25,11 @@ public:
 	AAttackUnit();
 
 	// Interface for taking damage
-	virtual void UnitDamaged_Implementation(ETeam UnitTeam, AActor* VictimTarget, float DamageAmount) override;
+	virtual void UnitDamaged_Implementation(
+		ETeam AttackerTeam,
+		AController* AttackContrroller,
+		AActor* VictimTarget, 
+		float DamageAmount) override;
 
 protected:
 	// Called when the game starts or when spawned
@@ -40,7 +44,7 @@ protected:
 
 
 	// function triggered when AttackSphere detect an overlap
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void OnAttackSphereBeginOverlap(
 		UPrimitiveComponent* OverlapComponent,
 		AActor* OtherActor,
@@ -52,7 +56,7 @@ protected:
 	);
 
 	// function triggered when target leave AttackSphere detection
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void OnAttackSphereEndOverlap(
 			UPrimitiveComponent* OverlapComponent,
 			AActor* OtherActor,
@@ -66,8 +70,8 @@ private:
 
 	/** ==========Unit Components========== */
 	// Sphere detecting target which set bIsTargetInRange to true
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
-		class USphereComponent* AttackSphere;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
+	//	class USphereComponent* AttackSphere;
 
 	UPROPERTY(VisibleAnywhere, BLueprintReadOnly, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
 		class AAttackUnitController* AU_Controller;

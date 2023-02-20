@@ -24,7 +24,11 @@ protected:
 	virtual void BeginPlay() override;
 
 	// Interface for taking damage
-	virtual void UnitDamaged_Implementation(ETeam UnitTeam, AActor* VictimTarget, float DamageAmount) override;
+	virtual void UnitDamaged_Implementation(
+		ETeam AttackerTeam,
+		AController* AttackContrroller,
+		AActor* VictimTarget,
+		float DamageAmount) override;
 
 
 private:

@@ -24,5 +24,9 @@ class PROJECTALPHA_API IUnitDamagedInterface
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-		void UnitDamaged(ETeam UnitTeam, AActor* VictimTarget, float DamageAmount);
+		void UnitDamaged(
+			ETeam AttackerTeam,
+			AController* AttackContrroller,
+			AActor* VictimTarget,
+			float DamageAmount);
 };

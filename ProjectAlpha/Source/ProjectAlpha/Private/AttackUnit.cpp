@@ -21,24 +21,36 @@ AAttackUnit::AAttackUnit() :
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	AttackSphere = CreateDefaultSubobject<USphereComponent>(TEXT("AttackSphere"));
-	AttackSphere->SetupAttachment(GetRootComponent());
+	//AttackSphere = CreateDefaultSubobject<USphereComponent>(TEXT("AttackSphere"));
+	//AttackSphere->SetupAttachment(GetRootComponent());
 
 }
 
-void AAttackUnit::UnitDamaged_Implementation(ETeam UnitTeam, AActor* VictimTarget, float DamageAmount)
+void AAttackUnit::UnitDamaged_Implementation(
+	ETeam AttackerTeam, 
+	AController* AttackContrroller,
+	AActor* VictimTarget, 
+	float DamageAmount)
 {
+	// Called for attacker to damage this unit
 	if (VictimTarget)
 	{
-		if (UnitTeam == EUnitTeam) return;
-		UGameplayStatics::ApplyDamage(
-			VictimTarget,
-			DamageAmount,
-			AU_Controller,
-			this,
-			UDamageType::StaticClass()
-		);
-		GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Current Health: %d"), HealthPoint));
+		if (AttackerTeam != this->EUnitTeam) // if they are not on the same team
+		{
+			UGameplayStatics::ApplyDamage(
+				// attacker apply damamge to this object. (it is the same thing as this getting attacked)
+				VictimTarget,
+				DamageAmount,
+				AttackContrroller,
+				this,
+				UDamageType::StaticClass()
+			);
+			GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Current Health: %d"), HealthPoint));
+		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, TEXT("Can't attack because they are on the same team"));
+		}
 	}
 	else
 	{
@@ -52,8 +64,9 @@ void AAttackUnit::BeginPlay()
 	Super::BeginPlay();
 
 	// Tip: Don't put overlap events in constructor, it will cause a lot of crashes
-	AttackSphere->OnComponentBeginOverlap.AddDynamic(this, &AAttackUnit::OnAttackSphereBeginOverlap);
-	AttackSphere->OnComponentEndOverlap.AddDynamic(this, &AAttackUnit::OnAttackSphereEndOverlap);
+	//AttackSphere->OnComponentBeginOverlap.AddDynamic(this, &AAttackUnit::OnAttackSphereBeginOverlap);
+	//AttackSphere->OnComponentEndOverlap.AddDynamic(this, &AAttackUnit::OnAttackSphereEndOverlap);
+	// moved overlaped event calls into BP 
 	
 	// Get the AI controller
 	AU_Controller = Cast<AAttackUnitController>(GetController());

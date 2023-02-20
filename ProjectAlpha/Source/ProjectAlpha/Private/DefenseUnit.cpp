@@ -24,14 +24,16 @@ void ADefenseUnit::OnAttackSphereBeginOverlap(UPrimitiveComponent* OverlapCompon
 		auto CanDamaged_Unit = Cast<IUnitDamagedInterface>(OtherActor);
 		if (CanDamaged_Unit)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Blue, TEXT("Cast Success"));
-			CanDamaged_Unit->UnitDamaged_Implementation(EUnitTeam, OtherActor, BaseDamage);
+			DU_Controller->GetBlackboardComponent()->SetValueAsBool(FName("IsTargetInRange"), true);
+			DU_Controller->GetBlackboardComponent()->SetValueAsObject(FName("Target"), OtherActor);
+			CanDamaged_Unit->UnitDamaged_Implementation(this->EUnitTeam, GetController(), OtherActor, BaseDamage);
 		}
 	}
 }
 
 void ADefenseUnit::OnAttackSphereEndOverlap(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
+	
 }
 
 // Called when the game starts or when spawned

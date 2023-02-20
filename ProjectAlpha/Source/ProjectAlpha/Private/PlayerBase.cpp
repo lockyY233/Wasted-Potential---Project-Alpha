@@ -29,7 +29,11 @@ void APlayerBase::Tick(float DeltaTime)
 
 }
 
-void APlayerBase::UnitDamaged_Implementation(ETeam UnitTeam, AActor* VictimTarget, float DamageAmount)
+void APlayerBase::UnitDamaged_Implementation(
+	ETeam AttackerTeam,
+	AController* AttackContrroller,
+	AActor* VictimTarget,
+	float DamageAmount)
 {
 	if (VictimTarget)
 	{
