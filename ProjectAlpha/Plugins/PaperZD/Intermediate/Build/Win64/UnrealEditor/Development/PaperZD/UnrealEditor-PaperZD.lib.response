@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-PaperZD.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Module.PaperZD.cpp.obj"
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Default.rc2.res"
-/OUT:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\UnrealEditor-PaperZD.lib"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Module.PaperZD.cpp.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Default.rc2.res"
+/OUT:"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\UnrealEditor-PaperZD.lib"

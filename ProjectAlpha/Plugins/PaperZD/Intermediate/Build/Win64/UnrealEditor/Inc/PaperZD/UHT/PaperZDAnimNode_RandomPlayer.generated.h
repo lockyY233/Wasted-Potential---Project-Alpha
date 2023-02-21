@@ -14,14 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PAPERZD_PaperZDAnimNode_RandomPlayer_generated_h
 
-#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimNode_RandomPlayer_h_15_GENERATED_BODY \
+#define FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimNode_RandomPlayer_h_15_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPaperZDRandomPlayerEntry_Statics; \
 	PAPERZD_API static class UScriptStruct* StaticStruct();
 
 
 template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDRandomPlayerEntry>();
 
-#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimNode_RandomPlayer_h_57_GENERATED_BODY \
+#define FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimNode_RandomPlayer_h_57_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPaperZDAnimNode_RandomPlayer_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FPaperZDAnimNode_Base Super;
@@ -30,7 +30,7 @@ template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDRandomPlayerEn
 template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDAnimNode_RandomPlayer>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimNode_RandomPlayer_h
+#define CURRENT_FILE_ID FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimNode_RandomPlayer_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

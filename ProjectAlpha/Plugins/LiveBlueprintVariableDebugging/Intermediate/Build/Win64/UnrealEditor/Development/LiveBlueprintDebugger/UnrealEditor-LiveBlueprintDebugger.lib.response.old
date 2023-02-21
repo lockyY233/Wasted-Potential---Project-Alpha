@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-LiveBlueprintDebugger.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
-"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Module.LiveBlueprintDebugger.cpp.obj"
-"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Default.rc2.res"
-/OUT:"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\UnrealEditor-LiveBlueprintDebugger.lib"
+"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Module.LiveBlueprintDebugger.cpp.obj"
+"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Default.rc2.res"
+/OUT:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\UnrealEditor-LiveBlueprintDebugger.lib"

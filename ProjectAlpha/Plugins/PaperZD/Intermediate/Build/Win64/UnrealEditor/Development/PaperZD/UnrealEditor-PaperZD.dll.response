@@ -33,9 +33,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Module.PaperZD.cpp.obj"
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Default.rc2.res"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Module.PaperZD.cpp.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Default.rc2.res"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\Slate\UnrealEditor-Slate.lib"
@@ -67,7 +67,7 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Binaries\Win64\UnrealEditor-PaperZD.dll"
-/IMPLIB:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\UnrealEditor-PaperZD.suppressed.lib"
-/PDB:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Binaries\Win64\UnrealEditor-PaperZD.pdb"
+/OUT:"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Binaries\Win64\UnrealEditor-PaperZD.dll"
+/IMPLIB:"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\UnrealEditor-PaperZD.suppressed.lib"
+/PDB:"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Binaries\Win64\UnrealEditor-PaperZD.pdb"
 /ignore:4078

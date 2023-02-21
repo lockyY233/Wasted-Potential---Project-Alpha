@@ -1,8 +1,8 @@
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Module.PaperZD.cpp"
+A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Module.PaperZD.cpp
 /I .
-/I "D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Private"
-/I "D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Private\AnimNodes"
-/I "D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Private\Notifies"
+/I A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Private
+/I A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Private\AnimNodes
+/I A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Private\Notifies
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
 /I Runtime
 /I Runtime\CoreUObject\Public
@@ -272,11 +272,11 @@
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
-/I "D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Inc\PaperZD\UHT"
-/I "D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source"
-/I "D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Public"
-/I "D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Public\AnimNodes"
-/I "D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Public\Notifies"
+/I A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Inc\PaperZD\UHT
+/I A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source
+/I A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Public
+/I A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Public\AnimNodes
+/I A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Source\PaperZD\Public\Notifies
 /I ..\Plugins\2D\Paper2D\Intermediate\Build\Win64\UnrealEditor\Inc\Paper2D\UHT
 /I ..\Plugins\2D\Paper2D\Source
 /I ..\Plugins\2D\Paper2D\Source\Paper2D\Classes
@@ -290,12 +290,12 @@
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Definitions.PaperZD.h"
-/Yu"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Module.PaperZD.cpp.obj"
-/sourceDependencies "D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Module.PaperZD.cpp.dep.json"
+/FI"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Definitions.PaperZD.h"
+/Yu"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Module.PaperZD.cpp.obj"
+/sourceDependencies A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZD\Module.PaperZD.cpp.dep.json
 /Zc:inline
 /nologo
 /Oi

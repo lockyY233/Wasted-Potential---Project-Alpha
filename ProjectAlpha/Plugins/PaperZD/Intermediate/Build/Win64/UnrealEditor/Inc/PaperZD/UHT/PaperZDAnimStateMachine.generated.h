@@ -14,28 +14,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PAPERZD_PaperZDAnimStateMachine_generated_h
 
-#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimStateMachine_h_14_GENERATED_BODY \
+#define FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimStateMachine_h_14_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPaperZDAnimStateMachineTransitionRule_Statics; \
 	PAPERZD_API static class UScriptStruct* StaticStruct();
 
 
 template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDAnimStateMachineTransitionRule>();
 
-#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimStateMachine_h_46_GENERATED_BODY \
+#define FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimStateMachine_h_46_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPaperZDAnimStateMachineLink_Statics; \
 	PAPERZD_API static class UScriptStruct* StaticStruct();
 
 
 template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDAnimStateMachineLink>();
 
-#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimStateMachine_h_79_GENERATED_BODY \
+#define FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimStateMachine_h_79_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPaperZDAnimStateMachineNode_Statics; \
 	PAPERZD_API static class UScriptStruct* StaticStruct();
 
 
 template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDAnimStateMachineNode>();
 
-#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimStateMachine_h_120_GENERATED_BODY \
+#define FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimStateMachine_h_120_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPaperZDAnimStateMachine_Statics; \
 	PAPERZD_API static class UScriptStruct* StaticStruct();
 
@@ -43,7 +43,7 @@ template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDAnimStateMachi
 template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDAnimStateMachine>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimStateMachine_h
+#define CURRENT_FILE_ID FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimStateMachine_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

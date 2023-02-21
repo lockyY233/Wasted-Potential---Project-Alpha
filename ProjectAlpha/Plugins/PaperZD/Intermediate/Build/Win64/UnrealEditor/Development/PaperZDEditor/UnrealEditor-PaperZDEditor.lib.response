@@ -6,9 +6,9 @@
 /NAME:"UnrealEditor-PaperZDEditor.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZDEditor\Module.PaperZDEditor.1_of_3.cpp.obj"
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZDEditor\Module.PaperZDEditor.2_of_3.cpp.obj"
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZDEditor\Module.PaperZDEditor.3_of_3.cpp.obj"
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZDEditor\Default.rc2.res"
-/OUT:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZDEditor\UnrealEditor-PaperZDEditor.lib"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZDEditor\Module.PaperZDEditor.1_of_3.cpp.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZDEditor\Module.PaperZDEditor.2_of_3.cpp.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZDEditor\Module.PaperZDEditor.3_of_3.cpp.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZDEditor\Default.rc2.res"
+/OUT:"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\PaperZD\Intermediate\Build\Win64\UnrealEditor\Development\PaperZDEditor\UnrealEditor-PaperZDEditor.lib"

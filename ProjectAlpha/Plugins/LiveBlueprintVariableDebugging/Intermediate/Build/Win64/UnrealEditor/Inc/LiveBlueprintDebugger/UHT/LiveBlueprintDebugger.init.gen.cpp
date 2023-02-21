@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeLiveBlueprintDebugger_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000040,
-				0xE4CF0A32,
+				0x98D5D947,
 				0x68EF0126,
 				METADATA_PARAMS(nullptr, 0)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeLiveBlueprintDebugger_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_LiveBlueprintDebugger.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_LiveBlueprintDebugger(Z_Construct_UPackage__Script_LiveBlueprintDebugger, TEXT("/Script/LiveBlueprintDebugger"), Z_Registration_Info_UPackage__Script_LiveBlueprintDebugger, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xE4CF0A32, 0x68EF0126));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_LiveBlueprintDebugger(Z_Construct_UPackage__Script_LiveBlueprintDebugger, TEXT("/Script/LiveBlueprintDebugger"), Z_Registration_Info_UPackage__Script_LiveBlueprintDebugger, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x98D5D947, 0x68EF0126));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

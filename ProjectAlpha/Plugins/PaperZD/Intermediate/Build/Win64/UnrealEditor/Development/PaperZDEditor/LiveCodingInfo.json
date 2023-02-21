@@ -86,11 +86,11 @@
 			"PaperZDAnimationSourceFactory.cpp.obj",
 			"PaperZDAnimBPFactory.cpp.obj",
 			"PaperZDAnimSequenceFactory.cpp.obj",
-			"PaperZDAnimGraphNode_Base.cpp.obj",
-			"PaperZDAnimGraphNode_CacheAnimation.cpp.obj",
-			"PaperZDAnimGraphNode_LayerAnimations.cpp.obj"
+			"PaperZDAnimGraphNode_Base.cpp.obj"
 		],
 		"Module.PaperZDEditor.3_of_3.cpp.obj": [
+			"PaperZDAnimGraphNode_CacheAnimation.cpp.obj",
+			"PaperZDAnimGraphNode_LayerAnimations.cpp.obj",
 			"PaperZDAnimGraphNode_PlaySequence.cpp.obj",
 			"PaperZDAnimGraphNode_RandomPlayer.cpp.obj",
 			"PaperZDAnimGraphNode_SelectByBool.cpp.obj",

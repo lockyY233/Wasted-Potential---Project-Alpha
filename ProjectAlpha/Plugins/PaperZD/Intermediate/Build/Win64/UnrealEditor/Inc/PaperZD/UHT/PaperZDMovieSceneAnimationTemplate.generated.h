@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PAPERZD_PaperZDMovieSceneAnimationTemplate_generated_h
 
-#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_Sequencer_PaperZDMovieSceneAnimationTemplate_h_14_GENERATED_BODY \
+#define FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_Sequencer_PaperZDMovieSceneAnimationTemplate_h_14_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPaperZDMovieSceneAnimationSectionTemplateParams_Statics; \
 	PAPERZD_API static class UScriptStruct* StaticStruct(); \
 	typedef FPaperZDMovieSceneAnimationParams Super;
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDMovieSceneAnimationSectionTemplateParams>();
 
-#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_Sequencer_PaperZDMovieSceneAnimationTemplate_h_41_GENERATED_BODY \
+#define FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_Sequencer_PaperZDMovieSceneAnimationTemplate_h_41_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPaperZDMovieSceneAnimationTemplate_Statics; \
 	PAPERZD_API static class UScriptStruct* StaticStruct(); \
 	typedef FMovieSceneEvalTemplate Super;
@@ -31,7 +31,7 @@ template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDMovieSceneAnim
 template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDMovieSceneAnimationTemplate>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_Sequencer_PaperZDMovieSceneAnimationTemplate_h
+#define CURRENT_FILE_ID FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_Sequencer_PaperZDMovieSceneAnimationTemplate_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

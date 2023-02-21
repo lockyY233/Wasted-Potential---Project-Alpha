@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PAPERZD_PaperZDAnimNode_SelectByInt_generated_h
 
-#define FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimNode_SelectByInt_h_13_GENERATED_BODY \
+#define FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimNode_SelectByInt_h_13_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPaperZDAnimNode_SelectByInt_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FPaperZDAnimNode_Base Super;
@@ -23,7 +23,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> PAPERZD_API UScriptStruct* StaticStruct<struct FPaperZDAnimNode_SelectByInt>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID__Project_Wasted_Potential___Project_Alpha_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimNode_SelectByInt_h
+#define CURRENT_FILE_ID FID_ProjectAlpha_Plugins_PaperZD_Source_PaperZD_Public_AnimNodes_PaperZDAnimNode_SelectByInt_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
