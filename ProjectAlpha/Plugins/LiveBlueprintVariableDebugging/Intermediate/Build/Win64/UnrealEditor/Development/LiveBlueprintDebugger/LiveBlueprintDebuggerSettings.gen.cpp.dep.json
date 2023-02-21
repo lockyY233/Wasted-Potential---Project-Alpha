@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\liveblueprintvariabledebugging\\intermediate\\build\\win64\\unrealeditor\\inc\\liveblueprintdebugger\\uht\\liveblueprintdebuggersettings.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "a:\\project\\wasted-potential---project-alpha\\projectalpha\\intermediate\\build\\win64\\projectalphaeditor\\development\\unrealed\\sharedpch.unrealed.shadowerrors.h.pch",
+        "Includes": [
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\liveblueprintvariabledebugging\\intermediate\\build\\win64\\unrealeditor\\development\\liveblueprintdebugger\\definitions.liveblueprintdebugger.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\liveblueprintvariabledebugging\\source\\liveblueprintdebugger\\public\\liveblueprintdebuggersettings.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\liveblueprintvariabledebugging\\intermediate\\build\\win64\\unrealeditor\\inc\\liveblueprintdebugger\\uht\\liveblueprintdebuggersettings.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

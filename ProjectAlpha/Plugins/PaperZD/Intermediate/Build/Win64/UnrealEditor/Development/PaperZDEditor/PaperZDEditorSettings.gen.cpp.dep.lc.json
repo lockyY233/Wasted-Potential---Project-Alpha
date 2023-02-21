@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdeditorsettings.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "a:\\project\\wasted-potential---project-alpha\\projectalpha\\intermediate\\build\\win64\\projectalphaeditor\\development\\unrealed\\sharedpch.unrealed.shadowerrors.h.pch",
+        "Includes": [
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\development\\paperzdeditor\\definitions.paperzdeditor.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\paperzd\\source\\paperzdeditor\\private\\editors\\util\\paperzdeditorsettings.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzdeditor\\uht\\paperzdeditorsettings.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

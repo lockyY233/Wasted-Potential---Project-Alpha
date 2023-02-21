@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\ipaperzdaniminstancemanager.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "a:\\project\\wasted-potential---project-alpha\\projectalpha\\intermediate\\build\\win64\\projectalphaeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\development\\paperzd\\definitions.paperzd.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\paperzd\\source\\paperzd\\public\\ipaperzdaniminstancemanager.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\paperzd\\intermediate\\build\\win64\\unrealeditor\\inc\\paperzd\\uht\\ipaperzdaniminstancemanager.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\flatnodes\\uht\\flatnodessettings.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "a:\\project\\wasted-potential---project-alpha\\projectalpha\\intermediate\\build\\win64\\projectalphaeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\development\\flatnodes\\definitions.flatnodes.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\source\\flatnodes\\public\\flatnodessettings.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\flatnodes\\uht\\flatnodessettings.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

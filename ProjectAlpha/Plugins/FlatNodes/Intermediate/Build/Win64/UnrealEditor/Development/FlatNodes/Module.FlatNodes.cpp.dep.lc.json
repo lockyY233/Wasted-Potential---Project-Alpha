@@ -1,0 +1,34 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\development\\flatnodes\\module.flatnodes.cpp",
+        "ProvidedModule": "",
+        "PCH": "a:\\project\\wasted-potential---project-alpha\\projectalpha\\intermediate\\build\\win64\\projectalphaeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\development\\flatnodes\\definitions.flatnodes.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\source\\flatnodes\\private\\flatnodes.cpp",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\source\\flatnodes\\public\\flatnodes.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\source\\flatnodes\\public\\flatnodessettings.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\flatnodes\\uht\\flatnodessettings.generated.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\projects\\public\\versescope.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\engine\\public\\slate\\slategameresources.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\styling\\slatestyle.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateborderbrush.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateboxbrush.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\brushes\\slatecolorbrush.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateroundedboxbrush.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\brushes\\slateimagebrush.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\runtime\\slatecore\\public\\styling\\slatestylemacros.h",
+            "d:\\program file\\ue_5.1\\engine\\source\\editor\\editorstyle\\public\\editorstyleset.h",
+            "a:\\project\\wasted-potential---project-alpha\\projectalpha\\plugins\\flatnodes\\source\\flatnodes\\private\\flatnodessettings.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
