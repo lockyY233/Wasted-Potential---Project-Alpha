@@ -39,3 +39,7 @@ Build/*
 # Built data for maps
 *_BuiltData.uasset
 
+# Plugins generated 
+/ProjectAlpha/Plugins/FlatNodes/Intermediate/*
+/ProjectAlpha/Plugins/LiveBlueprintVariableDebugging/Intermediate/*
+/ProjectAlpha/Plugins/PaperZD/Intermediate/*
