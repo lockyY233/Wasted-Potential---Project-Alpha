@@ -26,7 +26,6 @@ void ADefenseUnit::OnAttackSphereBeginOverlap(UPrimitiveComponent* OverlapCompon
 		{
 			DU_Controller->GetBlackboardComponent()->SetValueAsBool(FName("IsTargetInRange"), true);
 			DU_Controller->GetBlackboardComponent()->SetValueAsObject(FName("Target"), OtherActor);
-			CanDamaged_Unit->UnitDamaged_Implementation(this->EUnitTeam, GetController(), OtherActor, BaseDamage);
 		}
 	}
 }
@@ -49,6 +48,33 @@ void ADefenseUnit::BeginPlay()
 		DU_Controller->RunBehaviorTree(DU_BehaviorTree);
 	}
 }
+
+AActor* ADefenseUnit::GetNextTarget(TArray<AActor*> ActorList)
+{
+	int TargetLength = ActorList.Num();
+	if (TargetLength > 1) // if there is target
+	{
+		/* calculate distance between each target on the list */
+
+		// initiate the first target to index 0
+		AActor* ClosestTarget = ActorList[0];
+		double CurrentLegnth{(ClosestTarget->GetActorLocation() - this->GetActorLocation()).Length()};
+		for (int i = 0; i < ActorList.Num(); i++)
+		{
+			// distance is the difference between 
+			FVector ActorDistance = ActorList[i]->GetActorLocation() - this->GetActorLocation(); 
+			if (ActorDistance.Length() < CurrentLegnth)
+			{
+				ClosestTarget = ActorList[i];
+				CurrentLegnth = ActorDistance.Length();
+			}
+		}
+		return ClosestTarget;
+	}
+	// return nullptr if there is no more targets on the list
+	return nullptr;
+}
+
 
 // Called every frame
 void ADefenseUnit::Tick(float DeltaTime)

@@ -43,6 +43,13 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	/** Calculate and get the next closest target from targetlist 
+	*  return nullptr if there is no more target in the list
+	*/
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+		AActor* GetNextTarget(TArray<AActor*> ActorList);
+
+
 private:
 
 	/** Unit Team enum so they dont fight each other */
@@ -58,10 +65,19 @@ private:
 	UPROPERTY(EditAnywhere, BLueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
 		class UBehaviorTree* DU_BehaviorTree;
 
+	/** Target List keep track of all vialbe targets and save it to memory */
+	UPROPERTY(VisibleAnywhere, BLueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
+		TArray<AActor*> TargetList;
+
+	UPROPERTY(VisibleAnywhere, BLueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
+		AActor* CurrentTarget;
+
+
 	/** ============== AI KEYS ==============*/
 	UPROPERTY(EditAnywhere, BLueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
 		bool bIsTargetInRange;
 	/** ===================================== */
+
 
 public:	
 	// Called every frame

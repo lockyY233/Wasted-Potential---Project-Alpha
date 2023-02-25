@@ -64,8 +64,6 @@ void AAttackUnit::BeginPlay()
 	Super::BeginPlay();
 
 	// Tip: Don't put overlap events in constructor, it will cause a lot of crashes
-	//AttackSphere->OnComponentBeginOverlap.AddDynamic(this, &AAttackUnit::OnAttackSphereBeginOverlap);
-	//AttackSphere->OnComponentEndOverlap.AddDynamic(this, &AAttackUnit::OnAttackSphereEndOverlap);
 	// moved overlaped event calls into BP 
 	
 	// Get the AI controller
@@ -96,13 +94,13 @@ float AAttackUnit::TakeDamage(float DamageAmount, FDamageEvent const& DamageEven
 
 void AAttackUnit::OnAttackSphereBeginOverlap(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-
+	/*
 	// When Target is in Range
 	if (OtherActor)
 	{
 		// check if target has interface inherited
 		auto TargetInteractable = Cast<IUnitDamagedInterface>(OtherActor);
-		if (TargetInteractable)
+		if (TargetInteractable && AU_Controller)
 		{
 			// Reminder: bIsTargetInRange is used by Behavior Tree
 			bIsTargetInRange = true;
@@ -111,10 +109,12 @@ void AAttackUnit::OnAttackSphereBeginOverlap(UPrimitiveComponent* OverlapCompone
 			AU_Controller->GetBlackboardComponent()->SetValueAsObject(FName("Target"), CurrentTarget);
 		}
 	}
+	*/
 }
 
 void AAttackUnit::OnAttackSphereEndOverlap(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
+	/*
 	// When Target is Killed or out of range
 	if (OtherActor)
 	{
@@ -122,6 +122,7 @@ void AAttackUnit::OnAttackSphereEndOverlap(UPrimitiveComponent* OverlapComponent
 		AU_Controller->GetBlackboardComponent()->SetValueAsBool(FName("IsTargetInRange"), bIsTargetInRange);
 		AU_Controller->GetBlackboardComponent()->SetValueAsObject(FName("Target"), GetAttackFinalTarget());
 	}
+	*/
 }
 
 
