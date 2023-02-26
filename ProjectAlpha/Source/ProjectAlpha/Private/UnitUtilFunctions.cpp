@@ -5,6 +5,7 @@
 
 bool UUnitUtilFunctions::BFL_IsActorOnTeam(AActor* ActorReference, ETeam UnitTeam)
 {
+	if (ActorReference == nullptr) return false;
 	if (UnitTeam == ETeam::ET_Player)
 	{
 		return ActorReference->ActorHasTag(FName("Player"));

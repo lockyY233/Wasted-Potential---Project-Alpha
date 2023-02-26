@@ -58,18 +58,21 @@ AActor* ADefenseUnit::GetNextTarget(TArray<AActor*> ActorList)
 
 		// initiate the first target to index 0
 		AActor* ClosestTarget = ActorList[0];
-		double CurrentLegnth{(ClosestTarget->GetActorLocation() - this->GetActorLocation()).Length()};
-		for (int i = 0; i < ActorList.Num(); i++)
+		if (ClosestTarget)
 		{
-			// distance is the difference between 
-			FVector ActorDistance = ActorList[i]->GetActorLocation() - this->GetActorLocation(); 
-			if (ActorDistance.Length() < CurrentLegnth)
+			double CurrentLegnth{ (ClosestTarget->GetActorLocation() - this->GetActorLocation()).Length() };
+			for (int i = 0; i < ActorList.Num(); i++)
 			{
-				ClosestTarget = ActorList[i];
-				CurrentLegnth = ActorDistance.Length();
+				// distance is the difference between 
+				FVector ActorDistance = ActorList[i]->GetActorLocation() - this->GetActorLocation();
+				if (ActorDistance.Length() < CurrentLegnth)
+				{
+					ClosestTarget = ActorList[i];
+					CurrentLegnth = ActorDistance.Length();
+				}
 			}
+			return ClosestTarget;
 		}
-		return ClosestTarget;
 	}
 	// return nullptr if there is no more targets on the list
 	return nullptr;

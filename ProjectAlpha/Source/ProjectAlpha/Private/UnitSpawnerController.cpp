@@ -2,6 +2,7 @@
 
 
 #include "UnitSpawnerController.h"
+#include "UnitSpawner.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
@@ -19,5 +20,9 @@ void AUnitSpawnerController::OnPossess(APawn* InPawn)
 	Super::OnPossess(InPawn);
 	if (InPawn == nullptr) return;
 
-
+	AUnitSpawner* UnitSpawner = Cast<AUnitSpawner>(InPawn);
+	if (UnitSpawner)
+	{
+		BlackboardComponent->InitializeBlackboard(*(UnitSpawner->GetBehaviorTree()->BlackboardAsset));
+	}
 }

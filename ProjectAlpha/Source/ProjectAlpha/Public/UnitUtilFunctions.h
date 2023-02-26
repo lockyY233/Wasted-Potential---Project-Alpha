@@ -17,7 +17,7 @@ class PROJECTALPHA_API UUnitUtilFunctions : public UBlueprintFunctionLibrary
 
 	/**** NOTE: cannot use public specifier because it will ask for class reference ****/
 	/** Use Tag system to check if actors are on the same team */
-	UFUNCTION(BlueprintCallable, Category = "BFL Unit Utilities", meta = (WorldContext = "WorldContextObject"))
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "BFL Unit Utilities", meta = (WorldContext = "WorldContextObject"))
 		static bool BFL_IsActorOnTeam(AActor* ActorReference, ETeam UnitTeam);
 	
 };
