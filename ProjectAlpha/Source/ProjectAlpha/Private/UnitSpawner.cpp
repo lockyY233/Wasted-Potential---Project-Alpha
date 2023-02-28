@@ -11,9 +11,11 @@ AUnitSpawner::AUnitSpawner() :
 	bShouldKeepMoneyTimer(true),
 	UnitSpawnTime(2.f),
 	TimeLeftToSpawn(2.f),
-	isEnemy(false),
 	MoneyTimerPeriodLength(1.f),
-	MoneyAmountPerPeriod(5.f)
+	MoneyAmountPerPeriod(5.f),
+	bShouldKeepXPTimer(true),
+	XPTimerPeriodLength(0.5f),
+	XPAmountPerPeriod(10)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -32,7 +34,7 @@ void AUnitSpawner::BeginPlay()
 	// bind timeline finished func to custom delegate
 	SpawnerTimeline->SetTimelineFinishedFunc(OnSpawnerTimerFinished);
 
-	if (isEnemy)
+	if (Team == ETeam::ET_Enemy)
 	{
 		Spawner_Controller = Cast<AUnitSpawnerController>(GetController());
 		if (Spawner_Controller)
@@ -44,6 +46,11 @@ void AUnitSpawner::BeginPlay()
 	if (bShouldKeepMoneyTimer)
 	{
 		StartMoneyTimer();
+	}
+
+	if (bShouldKeepXPTimer)
+	{
+		StartXPTimer();
 	}
 }
 
@@ -94,6 +101,44 @@ void AUnitSpawner::RestartMoneyTimer()
 void AUnitSpawner::StopMoneyTimer()
 {
 	bShouldKeepMoneyTimer = false;
+}
+
+void AUnitSpawner::StartXPTimer()
+{
+	GetWorldTimerManager().SetTimer(
+		XPTimerHandle,
+		this,
+		&AUnitSpawner::XPPeriodFinished,
+		XPTimerPeriodLength);
+}
+
+void AUnitSpawner::XPPeriodFinished()
+{
+	// add XP to accounts
+	auto GameInst = Cast<UMainGameInstance>(GetGameInstance());
+	if (GameInst)
+	{
+		GameInst->AddXP(Team, XPAmountPerPeriod);
+	}
+	// restart the moneytimer
+	if (bShouldKeepXPTimer)
+	{
+		StartXPTimer();
+	}
+}
+
+void AUnitSpawner::RestartXPTimer()
+{
+	bShouldKeepXPTimer = true;
+	if (bShouldKeepXPTimer)
+	{
+		StartXPTimer();
+	}
+}
+
+void AUnitSpawner::StopXPTimer()
+{
+	bShouldKeepXPTimer = false;
 }
 
 // Called every frame

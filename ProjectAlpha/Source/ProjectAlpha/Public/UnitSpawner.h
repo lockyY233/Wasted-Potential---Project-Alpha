@@ -17,27 +17,31 @@ struct FAttackUnitProperties : public FTableRowBase
 
 
 	/** Attack Unit Class reference */
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		TSubclassOf<class AAttackUnit> AU_Class;
 
 	/** The Time it takes Attack Unit to Spawn */
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float TimeToSpawn;
 
-	/** Damage Output for the AU */
-	UPROPERTY(BlueprintReadWrite)
-		float BaseDamage;
-
 	/** Money cost to spawn in */
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int MoneyToCost;
 
+	/** Damage Output for the AU */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float BaseDamage;
+
+	/** Health of AU */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int MaxHealthPoint;
+
 	/** Money give to enemy when killed */
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int MoneyWhenKilled;
 
 	/** XP given to enemy when killed */
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int XPWhenKilled;
 
 };
@@ -63,6 +67,8 @@ protected:
 	UFUNCTION()
 		void UpdateTimeLeft(float TimeOutput);
 
+	// Money Timer: 
+
 	/** Called in BeginPlay in C++, use RestartMoneyTimer() in BP */
 	void StartMoneyTimer();
 
@@ -74,7 +80,24 @@ protected:
 		void RestartMoneyTimer();
 
 	UFUNCTION(BlueprintCallable)
-	FORCEINLINE void StopMoneyTimer();
+		void StopMoneyTimer();
+
+	// XP Timer:
+
+	/** Called in BeginPlay in C++, use RestartXPTimer() in BP */
+	void StartXPTimer();
+
+	UFUNCTION()
+		void XPPeriodFinished();
+
+	/** Restart the XP timer */
+	UFUNCTION(BlueprintCallable)
+		void RestartXPTimer();
+
+	UFUNCTION(BlueprintCallable)
+		void StopXPTimer();
+
+
 
 private:
 
@@ -117,10 +140,8 @@ private:
 	UPROPERTY(EditAnywhere, BLueprintReadWrite, Category = "Unit Properties", meta = (AllowPrivateAccess = "true"))
 		class UBehaviorTree* Spawner_BehaviorTree;
 
-	/** boolean to decide should Unitspawner using aicontroller or not */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Economy System", meta = (AllowPrivateAccess = "true"))
-		bool isEnemy;
-
+	// Economy System: 
+	//Money: 
 	/** TimerHandle handling the timer providing player a steady income */
 	FTimerHandle MoneyTimerHandle;
 
@@ -135,6 +156,21 @@ private:
 	/** The money palyers gain per period of time (Set by MoneyTimerPeriodLength) */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Economy System", meta = (AllowPrivateAccess = "true"))
 		int MoneyAmountPerPeriod;
+
+	//XP: 
+	FTimerHandle XPTimerHandle;
+
+	/** The switch to turn on and off the money timer */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Economy System", meta = (AllowPrivateAccess = "true"))
+		bool bShouldKeepXPTimer;
+
+	/** Money Period Length player need to wait to gain another patch of money  */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Economy System", meta = (AllowPrivateAccess = "true"))
+		float XPTimerPeriodLength;
+
+	/** The money palyers gain per period of time (Set by MoneyTimerPeriodLength) */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Economy System", meta = (AllowPrivateAccess = "true"))
+		int XPAmountPerPeriod;
 
 public:	
 	// Called every frame

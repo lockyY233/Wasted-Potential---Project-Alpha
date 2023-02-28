@@ -4,10 +4,10 @@
 		"Module.LiveBlueprintDebugger.cpp.obj": [
 			"LiveBlueprintDebugger.init.gen.cpp.obj",
 			"LiveBlueprintDebuggerSettings.gen.cpp.obj",
-			"FastPropertyInstanceInfo.cpp.obj",
 			"LiveBlueprintDebugger.cpp.obj",
 			"LiveBlueprintDebuggerDetailCustomization.cpp.obj",
-			"LiveBlueprintDebuggerSettings.cpp.obj"
+			"LiveBlueprintDebuggerSettings.cpp.obj",
+			"FastPropertyInstanceInfo.cpp.obj"
 		]
 	}
 }

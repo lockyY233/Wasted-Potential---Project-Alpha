@@ -33,9 +33,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Module.LiveBlueprintDebugger.cpp.obj"
-"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Default.rc2.res"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Module.LiveBlueprintDebugger.cpp.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Default.rc2.res"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\Projects\UnrealEditor-Projects.lib"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\InputCore\UnrealEditor-InputCore.lib"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\EditorFramework\UnrealEditor-EditorFramework.lib"
@@ -75,7 +75,7 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Binaries\Win64\UnrealEditor-LiveBlueprintDebugger.dll"
-/IMPLIB:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\UnrealEditor-LiveBlueprintDebugger.suppressed.lib"
-/PDB:"D:\Unreal Engine\_Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Binaries\Win64\UnrealEditor-LiveBlueprintDebugger.pdb"
+/OUT:"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Binaries\Win64\UnrealEditor-LiveBlueprintDebugger.dll"
+/IMPLIB:"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\UnrealEditor-LiveBlueprintDebugger.suppressed.lib"
+/PDB:"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Binaries\Win64\UnrealEditor-LiveBlueprintDebugger.pdb"
 /ignore:4078

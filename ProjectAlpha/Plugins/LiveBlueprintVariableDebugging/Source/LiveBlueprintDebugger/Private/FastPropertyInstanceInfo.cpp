@@ -105,7 +105,10 @@ uint32 FFastPropertyInstanceInfo::GetValueHash() const
 	}
 	else if ((Property->PropertyFlags & CPF_HasGetValueTypeHash))
 	{
-		ValueHash = Property->GetValueTypeHash(ValuePointer);
+		// locky edit: Unitspawner will not have AI Controller in place,
+		//  thus will crash as it try to accessing a nullptr
+		
+		//ValueHash = Property->GetValueTypeHash(ValuePointer);
 	}
 
 	return ValueHash;

@@ -8,5 +8,6 @@
 /NODEFAULTLIB
 "A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Intermediate\Build\Win64\ProjectAlphaEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
 "A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Module.LiveBlueprintDebugger.cpp.obj"
+"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\FastPropertyInstanceInfo.cpp.obj"
 "A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\Default.rc2.res"
 /OUT:"A:\Project\Wasted-Potential---Project-Alpha\ProjectAlpha\Plugins\LiveBlueprintVariableDebugging\Intermediate\Build\Win64\UnrealEditor\Development\LiveBlueprintDebugger\UnrealEditor-LiveBlueprintDebugger.lib"
